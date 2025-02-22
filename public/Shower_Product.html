@@ -23,7 +23,7 @@
             margin: 0 15px;
         }
         .section {
-            background_color : blue;
+           /* background_color : blue; */
             height: 100vh;
             margin: 0;
             padding: 0;
@@ -56,7 +56,7 @@
         .card {
         width: 200px;
         background: goldenrod;
-        border-style:solid;
+        border-style: solid;
         border-color: #885c2c;
         border-width: 10px;
         padding: 15px;
@@ -66,13 +66,28 @@
         }
 
         .card img {
+            font-style: poppins;
             width: 100%;
             height: auto;
             border-radius: 8px;
         }
-
+        .price{
+            color: black;
+            font-size: 18px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
         .stars {
             color: gold;
+            font-size: 15px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .salty_scalp_rating {
+            color: black;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -90,10 +105,11 @@
 <section id="section2" class="section">
     <h1>About Us</h1>
     <div class="card">
-        <h3>Product Name</h3>
+        <h3 class="product_name">Product Name</h3>
         <img src="images/shampoo-bottle-ZRvq3mA-600 (1).jpg" alt="Product Image">
-        <p>Price: $XX.XX</p>
-        <p class="stars">★★★★★</p>
+        <p class="price">Price: $XX.XX</p>
+        <p class="stars">💎💎💎💎💎💎💎💎💎</p>
+        <p class="salty_scalp_rating">Salty Scalp Rating: 10/10</p>
     </div>
 </section>
 <section id="section3" class="section">
