@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transition: background 1s ease-in-out;
+
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .section {
+           /* background_color : blue; */
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+            background-size: cover;
+            background-position: center;
+            transition: opacity 1s ease-in-out;
+        }
+        /* #section1 {
+            background-image: url('images/image_section1.jpg');
+        }
+        #section2 {
+            background-image: url('images/image_section2.jpg');
+        }
+        #section3 {
+            background-image: url('images/image_section3.jpg');
+        }*/
+        .footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .card {
+        width: 200px;
+        background: goldenrod;
+        border-style: solid;
+        border-color: #885c2c;
+        border-width: 10px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        }
+
+        .card img {
+            font-style: poppins;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .price{
+            color: black;
+            font-size: 18px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .stars {
+            color: gold;
+            font-size: 15px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .salty_scalp_rating {
+            color: black;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body style="background-color:#B0E0E6;">
+
+<nav>
+    <a href="#section1">Home</a>
+    <a href="#section2">About</a>
+    <a href="#section3">Contact</a>
+</nav>
+<section id="section1" class="section">
+    <h1>Welcome to the Salty Scalp</h1>
+    <p>Here are the products</p>
+</section>
+<section id="section2" class="section">
+    <h1>About Us</h1>
+    <div class="card">
+        <h3 class="product_name">Product Name</h3>
+        <img src="images/shampoo-bottle-ZRvq3mA-600 (1).jpg" alt="Product Image">
+        <p class="price">Price: $XX.XX</p>
+        <p class="stars">💎💎💎💎💎💎💎💎💎</p>
+        <p class="salty_scalp_rating">Salty Scalp Rating: 10/10</p>
+    </div>
+</section>
+<section id="section3" class="section">
+    <h1>Contact Us</h1>
+    <p>Get in touch.</p>
+</section>
+<footer class="footer">
+    <p>&copy; 2025 My Website</p>
+</footer>
+<script>
+    document.addEventListener("scroll", function() {
+        let scrollPosition = window.scrollY;
+        let sections = document.querySelectorAll(".section");
+
+        sections.forEach((section, index) => {
+            if (scrollPosition >= section.offsetTop - window.innerHeight / 2) {
+                document.body.style.backgroundImage = section.style.backgroundImage;
+            }
+        });
+    });
+</script>
+</body>
+</html>
