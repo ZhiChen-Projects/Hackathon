@@ -5,11 +5,27 @@ body {
     text-align: center;
     transition: background 1s ease-in-out;
 }
+
 .title-section {
-    height: 50vh; /* Adjust the height as needed */
-    background-color: #B0E0E6; /* Match the body background color */
-    justify-content: flex-start; /* Align content at the top */
-    padding-top: 0px; /* Add some padding at the top */
+    h1{
+        font-size: 3em;
+        margin-top: 0;
+        margin-bottom: 0;   
+    }
+    p{
+       
+        font-size: 1.5em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: #B0E0E6; /* powder blue */
+}
+.about-us{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: #B0E0E6; /* powder blue */
 }
 nav {
     background: #333;
@@ -51,7 +67,7 @@ nav a {
     width: 100%;
 }
 .card {
-    font-style: Poppin;
+font-style: Poppin;
 width: 200px;
 background: goldenrod;
 border-style:solid;
