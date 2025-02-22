@@ -25,6 +25,7 @@
     <h1>About Us</h1>
     <p>We are blah blah blah</p>
 </section>
+
 <section id="section2" class="section">
     <h1>Products</h1>
     <div class="card">
@@ -34,7 +35,8 @@
         <p class="stars">💎💎💎💎💎💎💎💎💎💎</p>
         <p class="salty_scalp_rating">Salty Scalp Rating: 10/10</p>
     </div>
-</section>
+</section>  
+
 <section id="section3" class="section">
     <h1>Contact Us</h1>
     <p>Get in touch.</p>
@@ -42,17 +44,6 @@
 <footer class="footer">
     <p>&copy; 2025 My Website</p>
 </footer>
-<script>
-    document.addEventListener("scroll", function() {
-        let scrollPosition = window.scrollY;
-        let sections = document.querySelectorAll(".section");
 
-        sections.forEach((section, index) => {
-            if (scrollPosition >= section.offsetTop - window.innerHeight / 2) {
-                document.body.style.backgroundImage = section.style.backgroundImage;
-            }
-        });
-    });
-</script>
 </body>
 </html>
