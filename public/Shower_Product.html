@@ -52,21 +52,46 @@
             bottom: 0;
             width: 100%;
         }
+        .card {
+        width: 200px;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .stars {
+            color: gold;
+        }
     </style>
 </head>
 <body>
 <nav>
     <a href="#section1">Home</a>
+
     <a href="#section2">About</a>
     <a href="#section3">Contact</a>
 </nav>
 <section id="section1" class="section">
-    <h1>Welcome to The Salty Scalp</h1>
-    <p>Scroll down to see the background change.</p>
+
+    <h1>Welcome to the Salty Scalp</h1>
+    <p>Here are the products</p>
 </section>
 <section id="section2" class="section">
     <h1>About Us</h1>
-    <p>More content here.</p>
+    <div class="card">
+        <h3>Product Name</h3>
+        <img src="images/shampoo-bottle-ZRvq3mA-600 (1).jpg" alt="Product Image">
+        <p>Price: $XX.XX</p>
+        <p class="stars">★★★★★</p>
+    </div>
 </section>
 <section id="section3" class="section">
     <h1>Contact Us</h1>
