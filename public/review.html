@@ -39,15 +39,6 @@
             background-position: center;
             transition: opacity 1s ease-in-out;
         }
-        /* #section1 {
-            background-image: url('images/image_section1.jpg');
-        }
-        #section2 {
-            background-image: url('images/image_section2.jpg');
-        }
-        #section3 {
-            background-image: url('images/image_section3.jpg');
-        }*/
         .footer {
             background: #333;
             color: white;
@@ -97,21 +88,6 @@
 
 
 <body style="background-color:#B0E0E6;">
-<nav>
-    <a href="#section1">About me</a>
-    <a href="#section2">Products</a>
-    <a href="#section3">Contact us</a>
-</nav>
-
-<section id="title-section" class="section title-section">
-    <h1>Welcome to the Salty Scalp</h1>
-    <p>Your go-to place for amazing hair care products</p>
-</section>
-
-<section id="section1" class="section">
-    <h1>About Us</h1>
-    <p>We are blah blah blah</p>
-</section>
 <section id="section2" class="section">
     <h1>Products</h1>
     <div class="card">
@@ -122,24 +98,8 @@
         <p class="salty_scalp_rating">Salty Scalp Rating: 10/10</p>
     </div>
 </section>
-<section id="section3" class="section">
-    <h1>Contact Us</h1>
-    <p>Get in touch.</p>
-</section>
 <footer class="footer">
     <p>&copy; 2025 My Website</p>
 </footer>
-<script>
-    document.addEventListener("scroll", function() {
-        let scrollPosition = window.scrollY;
-        let sections = document.querySelectorAll(".section");
-
-        sections.forEach((section, index) => {
-            if (scrollPosition >= section.offsetTop - window.innerHeight / 2) {
-                document.body.style.backgroundImage = section.style.backgroundImage;
-            }
-        });
-    });
-</script>
 </body>
 </html>
