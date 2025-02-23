@@ -33,26 +33,57 @@
 <section class="section">
     <div class="product-container">
         <div class="product-details">
-            <h1>Review</h1>
-            <p>Eva:
-                10 out of 10 stars, Hair transformation!
-                I just HAVE to leave a review for this product!
-                I got the shampoo & conditioner set about a week ago...& while, yes, it does seem to have a more potent scent after rinsing out than other shampoos & conditioners I have tried,
-                it has helped my hair tremendously! Before using this set & for many dry winter months, whenever I would run my fingers through my hair
-                I would hear "SNAP! SNAP! SNAP!" I've only been using this duo for a week & find my hair to feel & be much healthier than with the
-                $70 shampoo & conditioner set I got not long ago...this is the best value for your money.
-                I wash my hair every 3-4 days & still feel the softness & moisture that it's provided on wash day by day 4.
-                I don't think I'll be using anything else from now on; this stuff is amazing!!! </p>
-            <button class="open-button" onclick="openForm()">Leave a review!</button>
+            <h1>Reviews</h1>
+            <div class="review-container">
+                <div class="review-card">
+                    <div class="review-top">
+                        <div class="avatar">A</div>
+                        <div class="review-info">
+                            <h3 class="review-name">Alex Brinkman</h3>
+                            <div class="review-rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        This is Alex's review.
+                    </div>
+                </div>
 
-            <div class="form-popup" id="myForm">
-                <form class="form-container">
-                    <textarea placeholder="Write your review..." required> </textarea>
-                    <button type="submit" class="btn">Send</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
+                <div class="review-card">
+                    <div class="review-top">
+                        <div class="avatar">B</div>
+                        <div class="review-info">
+                            <h3 class="review-name">Brian Smith</h3>
+                            <div class="review-rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        This is Brian's review.
+                    </div>
+                </div>
             </div>
-        </div>
+    </div>
+    </div>
+    <button class="open-button" onclick="openForm()">Leave a review!</button>
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <textarea placeholder="Write your review..." required> </textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
     </div>
 </section>
 
