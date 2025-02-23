@@ -6,10 +6,17 @@
     <title>Salty Scalps</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="review_styles.css" rel="stylesheet"/>
+
 </head>
 
 
 <body style="background-color:#B0E0E6;">
+<nav>
+    <a href="#section1">About me</a>
+    <a href="#section2">Products</a>
+    <a href="#section3">Contact us</a>
+</nav>
+
 <section id="section2" class="section">
     <!--<h1>Products</h1>
      <div class="card">
@@ -33,7 +40,23 @@
         <p class="eq">Salty Scalp: 9/10 </p>
     </div>
     </div>
+</section>
+<section id="section2" class="section">
+    <div class="product-container">
+        <div class="product-details">
+            <h1>Review</h1>
+            <p>Let us know how </p>
+            <div class="chat-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Chat</h1>
 
+                    <label for="msg"><b>Message</b></label>
+                    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
 </section>
 <footer class="footer">
     <p>Contact us at: 929-***-**** </p>
