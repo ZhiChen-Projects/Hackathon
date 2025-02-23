@@ -93,17 +93,28 @@ nav a {
     bottom: 0;
     width: 100%;
 }
+#section2 { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-around;
+}
 .card {
-font-style: Poppin;
-width: 200px;
-background: goldenrod;
-border-style:solid;
-border-color: #885c2c;
-border-width: 10px;
-padding: 15px;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-text-align: center;
+    font-style: 'Poppin';
+    width: 200px;
+    background: goldenrod;
+    border-style: solid;
+    border-color: #885c2c;
+    border-width: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing:content-box;
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover { 
+    transform: translateY(-5px);
 }
 .card img {
     width: 100%;
