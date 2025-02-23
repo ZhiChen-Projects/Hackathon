@@ -89,7 +89,7 @@ nav a {
     background: #333;
     color: white;
     padding: 10px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -100,7 +100,7 @@ nav a {
     justify-content: space-around;
 }
 .card {
-    font-style: 'Poppin';
+    font-style: 'Poppins';
     width: 200px;
     background: goldenrod;
     border-style: solid;
