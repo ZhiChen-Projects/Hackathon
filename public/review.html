@@ -20,20 +20,10 @@
 
 <body style="background-color:#B0E0E6;">
 <nav>
-    <a href="#section1">About me</a>
-    <a href="#section2">Products</a>
-    <a href="#section3">Contact us</a>
+    <a>Salty Scalp</a>
 </nav>
 
-<section id="section2" class="section">
-    <!--<h1>Products</h1>
-     <div class="card">
-        <h3>Product Name</h3>
-        <img src="images/shampoo-bottle-ZRvq3mA-600 (1).jpg" alt="Product Image">
-        <p class="price">Price: $XX.XX</p>
-        <p class="stars">💎💎💎💎💎💎💎💎💎</p>
-        <p class="salty_scalp_rating">Salty Scalp Rating: 10/10</p>
-    </div> -->
+<section class="section">
     <div class="product-container">
     <!-- Product Image -->
     <div class="product-image">
@@ -50,14 +40,13 @@
     </div>
 </section>
 
-<section id="section2" class="section">
+<section class="section">
     <div class="product-container">
         <div class="product-details">
             <h1>Review</h1>
-            <p>Let us know how </p>
+            <p>Let us know how YOU think about this product! </p>
             <button class="open-button" onclick="openForm()">Open Chat</button>
 
-            <!-- Popup Chat Form -->
                 <div class="form-popup" id="myForm">
                     <form class="form-container">
                         <textarea placeholder="Write your review..." required> </textarea>
@@ -69,8 +58,24 @@
     </div>
 </section>
 
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+
+    document.querySelector(".form-container").addEventListener("submit", function (event) {
+        event.preventDefault();
+        document.querySelector(".form-container textarea").value = "";
+        closeForm();
+    });
+</script>
 <footer class="footer">
     <p>Contact us at: 929-***-**** </p>
 </footer>
+
 </body>
 </html>
