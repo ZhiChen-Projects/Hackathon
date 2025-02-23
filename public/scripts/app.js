@@ -49,8 +49,14 @@ document.addEventListener("DOMContentLoaded", displayProducts);
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 }
-  
+
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
 
+document.querySelector(".form-container").addEventListener("submit", function (event) {
+    event.preventDefault();
+    document.querySelector(".form-container textarea").value = "";
+
+    closeForm();
+});
