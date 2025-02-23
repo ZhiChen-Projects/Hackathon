@@ -48,6 +48,7 @@
     }
     .review-rating .star {
       margin-right: 2px;
+      font-size: 10px
     }
     .review-content {
       font-size: 0.9rem;
