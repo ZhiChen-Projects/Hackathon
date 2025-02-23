@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Review</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/review_styles.css" rel="stylesheet"/>
+</head>
+
+<body style="background-color:#B0E0E6;">
+<nav>
+    <a href="index.html">Salty Scalp</a>
+</nav>
+
+<section class="section">
+    <div class="product-container">
+        <div class="product-image">
+            <img src="images/shampoo-bottle-ZRvq3mA-600 (1).jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h1>WIN...</h1>
+            <p>Details...</p>
+            <p class="price">Price: $10.50</p>
+            <p class="stars">💎💎💎💎💎💎💎💎💎💎</p>
+            <p class="eq">Salty Scalp: 9/10 </p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="product-container">
+        <div class="product-details">
+            <h1>Review</h1>
+            <p>Let us know how YOU think about this product! </p>
+            <button class="open-button" onclick="openForm()">Leave a review!</button>
+
+            <div class="form-popup" id="myForm">
+                <form class="form-container">
+                    <textarea placeholder="Write your review..." required> </textarea>
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+
+    document.querySelector(".form-container").addEventListener("submit", function (event) {
+        event.preventDefault();
+        document.querySelector(".form-container textarea").value = "";
+        closeForm();
+    });
+</script>
+<footer class="footer">
+    <p> Contact us at: 929-***-**** </p>
+</footer>
+
+</body>
+</html>
