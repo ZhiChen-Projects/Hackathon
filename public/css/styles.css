@@ -18,6 +18,10 @@ body {
         margin-top: 0;
         margin-bottom: 0;
     }
+    img{
+        width: 50%;
+        height: auto;
+    }
     margin-top: 5%;
     margin-bottom: 10%;
     background-color: #B0E0E6; /* powder blue */
@@ -31,13 +35,15 @@ body {
     p{
        
         font-size: 1.5em;
-        margin-top: 0;
+        margin-top: 1.5em;
         margin-bottom: 0;
+        margin-right: 150px;
+        margin-left: 150px;
     }
     background-color: #B0E0E6; /* powder blue */
     max-height: 20vh;
-    }
 }
+
 nav {
     background: #333;
     padding: 10px;
