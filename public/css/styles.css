@@ -6,9 +6,6 @@ body {
     transition: background 1s ease-in-out;
 }
 
-/* .title-section {
-    
-}*/
 .title-section{
     h1{
         font-size: 3em;
@@ -68,15 +65,7 @@ nav a {
         margin-bottom: 40px;   
     }
 }
-/* #section1 {
-    background-image: url('images/image_section1.jpg');
-}
-#section2 {
-    background-image: url('images/image_section2.jpg');
-}
-#section3 {
-    background-image: url('images/image_section3.jpg');
-}*/
+
 .footer {
     background: #333;
     color: white;
