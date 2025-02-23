@@ -10,6 +10,7 @@ body {
     padding: 0;
     text-align: center;
     transition: background 1s ease-in-out;
+    flex: 1;
 }
 
 .title-section{
@@ -61,7 +62,7 @@ nav a {
     margin: 0 15px;
 }
 .section {
-    height: 100vh;
+    height: 70vh;
     margin: 0;
     padding: 0px;
     display: flex;
@@ -76,22 +77,20 @@ nav a {
         margin-bottom: 40px;
     }
 }
-
-}
 .footer {
-    background: #333;
-    color: white;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-#section2 { 
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 20px; 
+          background: #333;
+          color: white;
+          padding: 10px;
+          position: fixed;
+          bottom: 0;
+          width: 100%
+        }
+#section2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-around;
-}
+}   
 .card {
     font-style: 'Poppins';
     width: 200px;
