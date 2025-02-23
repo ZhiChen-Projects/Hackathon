@@ -34,9 +34,9 @@ body {
         margin-top: 0;
         margin-bottom: 0;
     }
-    margin-top: 10%;
-    margin-bottom: 10%;
     background-color: #B0E0E6; /* powder blue */
+    max-height: 20vh;
+    }
 }
 nav {
     background: #333;
@@ -50,21 +50,35 @@ nav a {
 .section {
     height: 100vh;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: center;
-    transition: opacity 1s ease-in-out;
     h1{
         font-size: 3em;
-        margin-top: 0;
+        margin-top: 10;
         margin-bottom: 40px;
     }
 }
-
+.section2 {
+    height: 100vh;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    h1{
+        font-size: 3em;
+        margin-top: 10;
+        margin-bottom: 40px;
+    }
+}
 .footer {
     background: #333;
     color: white;
