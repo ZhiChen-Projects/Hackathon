@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garnier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/review_styles.css" rel="stylesheet"/>
+</head>
+
+<body style="background-color:#B0E0E6;">
+<nav>
+    <a href="index.html">Salty Scalp</a>
+</nav>
+
+<section class="section">
+    <div class="product-container">
+        <div class="product-image">
+            <img src="images/603084350643.jpg" alt="Product Image"></div>
+        <div class="product-details">
+            <h1>Garnier</h1>
+            <p>Garnier Fructis Sleek and Shine Shampoo with fairly and sustainably sourced Argan Oil from Morocco soaks into frizzy, dry hair to smooth each strand; Long lasting frizz control even in 97 percent humidity</p>
+            <p class="price">Price: $2.34</p>
+            <p class="stars">💎💎💎💎💎</p>
+            <p class="eq">Salty Scalp: 5/10 </p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <<div class="product-container">
+    <div class="product-details">
+        <h1>Reviews</h1>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="review-top">
+                    <div class="avatar">A</div>
+                    <div class="review-info">
+                        <h3 class="review-name">Anna Chen</h3>
+                        <div class="review-rating">
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-content">
+                    This product is not worth it's price. It doesn't do anything for my hair and it smells bad. I would not recommend this product to anyone.
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-top">
+                    <div class="avatar">Z</div>
+                    <div class="review-info">
+                        <h3 class="review-name">Richie Zhu</h3>
+                        <div class="review-rating">
+                            <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-content">
+                    It's alright, but I wouldn't buy it again. It's not the best shampoo I've used, but it's not the worst either. It's just okay.
+                </div>
+            </div>
+        </div>
+        <button class="open-button" onclick="openForm()">Leave a review!</button>
+
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <textarea placeholder="Write your review..." required> </textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+
+    document.querySelector(".form-container").addEventListener("submit", function (event) {
+        event.preventDefault();
+        document.querySelector(".form-container textarea").value = "";
+        closeForm();
+    });
+</script>
+<footer class="footer">
+    <p> Contact us at: 929-***-**** </p>
+</footer>
+
+</body>
+</html>

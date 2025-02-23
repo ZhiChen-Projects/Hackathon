@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dove</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/review_styles.css" rel="stylesheet"/>
+</head>
+
+<body style="background-color:#B0E0E6;">
+<nav>
+    <a href="index.html">Salty Scalp</a>
+</nav>
+
+<section class="section">
+    <div class="product-container">
+        <div class="product-image">
+            <img src="images/dove.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h1>Dove</h1>
+            <p> HAIR REBORN: Dove Intensive Repair hair shampoo renews with every wash-hair is reborn 10X stronger. when using SH/CD or SH/Mask vs. non-conditioning shampoo.
+                SHAMPOO FOR DAMAGED HAIR: This Dove shampoo with Glutamic Amino Serum stops 98% of visible hair damage. due to breakage vs. non-conditioning shampoo.
+            </p>
+            <p class="price">Price: $9.98</p>
+            <p class="stars">💎💎💎💎💎💎💎💎💎💎</p>
+            <p class="eq">Salty Scalp: 10/10 </p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="product-container">
+        <div class="product-details">
+            <h1>Reviews</h1>
+            <div class="review-container">
+                <div class="review-card">
+                    <div class="review-top">
+                        <div class="avatar">A</div>
+                        <div class="review-info">
+                            <h3 class="review-name">Alex Brinkman</h3>
+                            <div class="review-rating">
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        This doce shampoo and conditioner has become my favorite. I love how it leaves my hair feeling clean and smelling fresh while also helping enhance my curls. The price is also amazing, especially for how much I love this product. I have yet to find this particular kind in stores, so it's a must order only for me.
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-top">
+                        <div class="avatar">B</div>
+                        <div class="review-info">
+                            <h3 class="review-name">Brian Smith</h3>
+                            <div class="review-rating">
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                                <span class="star">💎</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        My favorite shampoo and conditioner only thing I was a little upset about was when I got my package it was busted but not to bad
+                    </div>
+                </div>
+            </div>
+            <button class="open-button" onclick="openForm()">Leave a review!</button>
+
+            <div class="form-popup" id="myForm">
+                <form class="form-container">
+                    <textarea placeholder="Write your review..." required> </textarea>
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+
+    document.querySelector(".form-container").addEventListener("submit", function (event) {
+        event.preventDefault();
+        document.querySelector(".form-container textarea").value = "";
+        closeForm();
+    });
+</script>
+<footer class="footer">
+    <p> Contact us at: 929-***-**** </p>
+</footer>
+
+</body>
+</html>
