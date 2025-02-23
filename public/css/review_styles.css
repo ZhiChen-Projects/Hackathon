@@ -89,13 +89,6 @@ body {
             margin-top: 10px;
         }
 
-        .product-details .stars {
-            color: gold;
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-        {box-sizing: border-box;}
-
         open-button {
             background-color: #555;
             color: white;
