@@ -94,37 +94,41 @@ body {
             font-size: 1.2rem;
             margin-top: 10px;
         }
-         {box-sizing: border-box;}
+        {box-sizing: border-box;}
 
         /* Button used to open the chat form - fixed at the bottom of the page */
-        .open-button {
-          background-color: #555;
-          color: white;
-          padding: 16px 20px;
-          border: none;
-          cursor: pointer;
-          opacity: 0.8;
-          position: fixed;
-          bottom: 23px;
-          right: 28px;
-          width: 280px;
+        open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
         }
 
         /* The popup chat - hidden by default */
         .form-popup {
-          display: none;
-          position: fixed;
-          bottom: 0;
-          right: 15px;
-          border: 3px solid #f1f1f1;
-          z-index: 9;
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed position */
+            top: 50%; /* Move to the vertical center */
+            left: 50%; /* Move to the horizontal center */
+            transform: translate(-50%, -50%); /* Center the popup */
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+            background-color: white; /* Add background color */
+            border-radius: 10px; /* Optional: Add rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
         }
 
         /* Add styles to the form container */
         .form-container {
-          max-width: 300px;
-          padding: 10px;
-          background-color: white;
+            max-width: 400px; /* Increase width */
+            padding: 20px; /* Add more padding */
+            background-color: white;
         }
 
         /* Full-width textarea */
@@ -164,4 +168,4 @@ body {
         /* Add some hover effects to buttons */
         .form-container .btn:hover, .open-button:hover {
           opacity: 1;
-        } 
+        }
