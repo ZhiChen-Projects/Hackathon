@@ -46,17 +46,19 @@
         <div class="product-details">
             <h1>Review</h1>
             <p>Let us know how </p>
-            <div class="chat-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">
-                    <h1>Chat</h1>
+            <button class="open-button" onclick="openForm()">Open Chat</button>
 
-                    <label for="msg"><b>Message</b></label>
-                    <textarea placeholder="Type message.." name="msg" required></textarea>
-
-                    <button type="submit" class="btn">Send</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
-            </div>
+            <!-- Popup Chat Form -->
+                <div class="form-popup" id="myForm">
+                    <form class="form-container">
+                        <h2>Chat</h2>
+                        <textarea placeholder="Type your message..." required></textarea>
+                        <button type="submit" class="btn">Send</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+        </div>
+    </div>
 </section>
 <footer class="footer">
     <p>Contact us at: 929-***-**** </p>
