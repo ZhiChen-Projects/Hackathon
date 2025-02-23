@@ -61,7 +61,8 @@ nav a {
     height: 75vh;
     background-size: cover;
     background-position: center;
-    transition: opacity 1s ease-in-out;
+
+
 }
 /* #section1 {
     background-image: url('images/image_section1.jpg');

@@ -122,13 +122,15 @@ body {
             background-color: white; /* Add background color */
             border-radius: 10px; /* Optional: Add rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+
         }
 
         /* Add styles to the form container */
         .form-container {
-            max-width: 400px; /* Increase width */
+            width: 100%; /* Increase width */
             padding: 20px; /* Add more padding */
             background-color: white;
+            box-sizing: border-box;
         }
 
         /* Full-width textarea */
@@ -140,12 +142,16 @@ body {
           background: #f1f1f1;
           resize: none;
           min-height: 200px;
+          box-sizing: border-box;
         }
 
         /* When the textarea gets focus, do something */
         .form-container textarea:focus {
           background-color: #ddd;
           outline: none;
+          max-width: 300px;
+          max-height: 300px;
+          box-sizing: border-box;
         }
 
         /* Set a style for the submit/login button */
@@ -158,6 +164,7 @@ body {
           width: 100%;
           margin-bottom:10px;
           opacity: 0.8;
+          box-sizing: border-box;
         }
 
         /* Add a red background color to the cancel button */
